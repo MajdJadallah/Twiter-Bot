@@ -2,7 +2,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 4000;
-const { twitterClient } = require("./twitterClient.js")
+const { twitterClient } = require("./twiter.Client")
 const CronJob = require("cron").CronJob;
 
 app.listen(port, () => {
